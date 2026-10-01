@@ -1,0 +1,23 @@
+[project]
+name = "ba-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sniper", email = "ahmedalizezo99@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "jupyterlab>=4.6.4",
+    "matplotlib>=3.11.2",
+    "odfpy>=1.4.1",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+ba-project = "ba_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
